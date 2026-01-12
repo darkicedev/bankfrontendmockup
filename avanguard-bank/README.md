@@ -1,73 +1,71 @@
-# React + TypeScript + Vite
+# Avanguard Bank Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A futuristic, glassmorphism-styled banking interface built for high-end roleplay scenarios. This project serves as a frontend prototype demonstrating a premium digital banking experience.
 
-Currently, two official plugins are available:
+![Avanguard Design Preview](https://via.placeholder.com/800x400?text=Avanguard+Bank+Preview)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## React Compiler
+*   **Premium Aesthetic**: Dark mode design with neon accents and glassmorphism effects.
+*   **Immersive Animations**: Custom particle canvas animations on the landing and login pages.
+*   **SPA Architecture**: Built with React and React Router for seamless, instant page transitions.
+*   **Simulated Functionality**: 
+    - Client Login (Simulated authentication)
+    - Account Dashboard (Overview of assets)
+    - Transaction History & simulated Wire Transfers.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+*   **Framework**: React (Vite)
+*   **Language**: TypeScript
+*   **Styling**: Custom CSS (No frameworks, pure innovation)
+*   **Routing**: React Router Dom v6
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Follow these instructions to get the project up and running on your local machine.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+*   Node.js (v16 or higher)
+*   npm or yarn
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/avanguard-bank.git
+    cd avanguard-bank
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Running the Development Server
+
+To start the local development server:
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📂 Project Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*   `/src/components` - Core UI components
+    *   `Landing.tsx` & `LandingAnimation.tsx` - Main entry page with particle effects.
+    *   `Login.tsx` - Secure access portal.
+    *   `Dashboard.tsx` - Main user overview.
+    *   `AccountDetails.tsx` - Transaction list and transfer logic.
+*   `/src/App.tsx` - Application routing.
+
+## 🤝 Contributing
+
+This is a roleplay asset project. Feel free to fork and modify for your own campaigns!
+
+## 📄 License
+
+This project is licensed under the MIT License.
