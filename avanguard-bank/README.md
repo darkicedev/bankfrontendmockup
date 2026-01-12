@@ -2,7 +2,7 @@
 
 A futuristic, glassmorphism-styled banking interface built for high-end roleplay scenarios. This project serves as a frontend prototype demonstrating a premium digital banking experience.
 
-![Avanguard Design Preview](https://via.placeholder.com/800x400?text=Avanguard+Bank+Preview)
+![Avanguard Design Preview](https://i.ibb.co/jkqcq0VH/image.png)
 
 ## 🌟 Features
 
